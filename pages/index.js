@@ -24,6 +24,13 @@ export default function Home() {
             src="/assets/logo.png" width="128px"
             whileHover={{ rotate: 8 }}
             whileTap={{ rotate: 180 }}
+            drag
+            dragConstraints={{
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+            }}
           />
 
           <motion.div 
