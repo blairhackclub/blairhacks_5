@@ -1,19 +1,32 @@
 import React from 'react';
 
-import { motion } from "framer-motion";
+import {
+  motion,
+} from "framer-motion"
 
 import {
   Container,
+  Flex,
+  Stack,
   Box,
   Heading,
   Text,
+  IconButton,
+  Image,
 } from '@chakra-ui/react';
+import Icon from '@hackclub/icons';
 
 import Link from '../components/Link';
 import Em from '../components/Em';
-import Footer from '../components/Footer';
 
 export default function Home() {
+  const [logoState, setLogoState] = React.useState("rest");
+  const logoVariants = {
+    rest: { y: 0, rotate: 0 },
+    launch: { y: [0, 10, -200], rotate: -45 },
+    land: { y: [-200, 10, 0], rotate: [-45, -45, 0] }
+  };
+
   return (
     <>
       <Container 
@@ -22,15 +35,9 @@ export default function Home() {
         <Box align="center">
           <motion.img
             src="/assets/logo.png" width="128px"
-            whileHover={{ rotate: 8 }}
-            whileTap={{ rotate: 180 }}
-            drag
-            dragConstraints={{
-              top: 0,
-              left: 0,
-              right: 0,
-              bottom: 0,
-            }}
+            variants={logoVariants}
+            animate={logoState}
+            onClick={() => setLogoState("launch")}
           />
 
           <motion.div 
@@ -39,7 +46,9 @@ export default function Home() {
               rotate: [0, -4, 0],
             }}
           >
-            <Heading as="h1" size="2xl" mt={2}>BlairHacks_5</Heading>
+            <Heading as="h1" size="2xl" mt={2}>
+              BlairHacks_5
+            </Heading>
           </motion.div>
           <Text mt={2}>
             51 University Blvd E, Silver Spring, MD ~ <Em noBold>February 18-19, 2022</Em>
@@ -67,7 +76,34 @@ export default function Home() {
         </Text>
       </Container>
       
-      <Footer/>
+      {/* FOOTER */}
+      <Container 
+        maxW="container.md" p={8} pb={24} align="center"
+      >
+        <Stack direction="row" justify="center" spacing={2}>
+          <Link href="https://instagram.com/blair_hacks" isExternal>
+            <IconButton icon={<Icon glyph="instagram" size={24}/>} isRound/>
+          </Link>
+          <Link href="https://twitter.com/blair_hacks" isExternal>
+            <IconButton icon={<Icon glyph="twitter" size={24}/>} isRound/>
+          </Link>
+
+          {(logoState === 'launch') &&
+            <motion.div
+              whileHover={{ rotate: 180 }}
+              onClick={() => { setLogoState("land"); window.scrollTo(0, 0) }}
+            >
+              <IconButton icon={<Icon glyph="up-caret" size={24}/>} isRound/>
+            </motion.div>
+          }
+
+          <Flex align="center" justify="center" px={2}>
+            <Link href="https://blair.hackclub.com" isExternal>
+              <Image src="https://blair.hackclub.com/branding/flag-standalone.svg" height="32px"/>
+            </Link>
+          </Flex>
+        </Stack>
+      </Container>
     </>
   );
 }
