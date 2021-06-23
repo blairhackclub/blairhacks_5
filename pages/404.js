@@ -23,7 +23,7 @@ export default function Custom404() {
         <Image src="/assets/logo.png" w="64px"/>
         <Heading as="h1" size="xl" mt={2}>404!</Heading>
         <Text size="lg">We couldn't find that page.</Text>
-        <Link href="/" isButton>
+        <Link href="/" noUnderline>
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}

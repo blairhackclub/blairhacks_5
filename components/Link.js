@@ -7,22 +7,23 @@ import {
 
 import Em from './Em';
 
-export default function Link({ href, isButton, isExternal, ...rest}) {
+export default function Link({ href, noUnderline, isExternal, ...rest }) {
   return (
     <>
       {isExternal ?
-        <Em noBold>
-          <ChakraLink href={href} 
-            style={{ textDecoration: isButton ? "none" : "underline" }} 
-            {...rest} isExternal
-          />
-        </Em>
+        <ChakraLink href={href}
+          color="red.600"
+          style={{ textDecoration: noUnderline ? "none" : "no" }}
+          {...rest} isExternal
+        />
       :
-        <Em noBold>
-          <NextLink href={href} passHref>
-            <ChakraLink style={{ textDecoration: isButton ? "none" : "underline" }} {...rest}/>
-          </NextLink>
-        </Em>
+        <NextLink href={href} passHref>
+          <ChakraLink
+            color="red.600"
+            style={{ textDecoration: noUnderline ? "none" : "no" }} 
+            {...rest}
+          />
+        </NextLink>
       }
     </>
   )

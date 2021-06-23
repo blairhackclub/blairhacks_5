@@ -4,10 +4,10 @@ import {
   Text,
 } from '@chakra-ui/react';
 
-export default function Bold({ noBold, semibold, ...rest }) {
+export default function Bold({ nobold, semibold, ...rest }) {
   return (
     <Text as="span" 
-      fontWeight={noBold ? "normal" : semibold ? "semibold" : "bold"} 
+      fontWeight={nobold ? "normal" : semibold ? "semibold" : "bold"} 
       color="red.600" 
       {...rest}
     />

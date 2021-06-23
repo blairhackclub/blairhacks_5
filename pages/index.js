@@ -23,8 +23,8 @@ export default function Home() {
   const [logoState, setLogoState] = React.useState("rest");
   const logoVariants = {
     rest: { y: 0, rotate: 0 },
-    launch: { y: [0, 10, -200], rotate: -45 },
-    land: { y: [-200, 10, 0], rotate: [-45, -45, 0] }
+    launch: { y: [0, 10, -420], rotate: -45 },
+    land: { y: [-420, 10, 0], rotate: [-45, -45, 0] }
   };
 
   return (
@@ -51,7 +51,7 @@ export default function Home() {
             </Heading>
           </motion.div>
           <Text mt={2}>
-            51 University Blvd E, Silver Spring, MD ~ <Em noBold>February 18-19, 2022</Em>
+            51 University Blvd E, Silver Spring, MD ~ <Em nobold>February 18-19, 2022</Em>
           </Text>
         </Box>
 
