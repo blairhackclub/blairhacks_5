@@ -1,4 +1,4 @@
-<p align="center"><img width="128" alt="BlairHacks logo" src="https://raw.githubusercontent.com/blairhackclub/blairhacks_5/master/public/assets/logo.png?token=AGZMURY6RA5IE27QWTEQEBLA2ISGS"></p>
+<p align="center"><img width="128" alt="BlairHacks logo" src="https://github.com/blairhackclub/blairhacks_5/blob/master/public/assets/logo.png?raw=true"></p>
 <h1 align="center"><a href="https://blairhacks.com/">BlairHacks_5 Landing Page</a></h1>
 <p align="center"><i>The source code for blairhacks.com</i></p>
 
