@@ -72,7 +72,7 @@ export default function Home() {
         
         <Heading as="h2" size="md" fontWeight="semibold" mt={8}>Sponsors</Heading>
         <Text mt={2}>
-          We are currently open to sponsors! Email us at <Link href="mailto:blairhacks@gmail.com">blairhacks@gmail.com</Link>.
+          We are currently open to sponsors! Email us at <Link href="mailto:team@blairhacks.com">team@blairhacks.com</Link>.
         </Text>
       </Container>
       
