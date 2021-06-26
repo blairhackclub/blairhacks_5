@@ -5,8 +5,6 @@ import {
   Link as ChakraLink
 } from '@chakra-ui/react';
 
-import Em from './Em';
-
 export default function Link({ href, noUnderline, isExternal, ...rest }) {
   return (
     <>

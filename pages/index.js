@@ -1,21 +1,29 @@
 import React from 'react';
-import { Box } from '@chakra-ui/react';
 
+import {
+} from '@chakra-ui/react';
+
+import Navbar from "../components/Navbar";
 import Landing from "../components/Landing";
-import Team from "../components/Team";
+import About from "../components/About";
 import Footer from "../components/Footer";
 
 export default function Home() {
-  const [logoState, setLogoState] = React.useState("rest");
-
   return (
     <>
-      <Landing logoState = {logoState} setLogoState = {setLogoState} />
-      <Box bg="blue.700">
-        <Team />
-      </Box>
-      <Footer logoState={logoState} setLogoState={setLogoState} />
+      <Navbar/>
+      
+      <Landing/>
 
+      <About/>
+      
+      {/* FAQ
+        What is a hackathon?
+        A hackathon is an event where students use technology to solve interesting problems in novel ways in a limited timeframe.
+        The most polished and effective hacks receive cool prizes, and all attendees get free swag, food, and a good time!
+      */}
+
+      <Footer/>
     </>
   );
 }

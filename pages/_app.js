@@ -7,8 +7,6 @@ import {
   Box,
 } from '@chakra-ui/react';
 
-import Navbar from '../components/Navbar';
-
 function MyApp({ Component, pageProps }) {
   return (
     <>
@@ -18,8 +16,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
       
       <ChakraProvider theme={theme} resetCSS>
-        <Box minH="100vh" bg="bg.dark">
-          <Navbar/>
+        <Box minH="100vh" bg="bg.extradark">
           <Component {...pageProps}/>
         </Box>
       </ChakraProvider>
