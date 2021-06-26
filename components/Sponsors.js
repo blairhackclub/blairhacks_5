@@ -18,15 +18,18 @@ export default function Sponsors() {
 				Help us make this hackathon possible! Email us at <Link href="mailto:team@blairhacks.com">team@blairhacks.com</Link>.
 			</Text>
 
-      <Button mt={6}
-        bgGradient="linear(to-tl,yellow.500,teal.500)"
-        _hover={{
-          bgGradient: "linear(to-tl,yellow.500,teal.500)",
-        }}
-        _active={{
-          bgGradient: "linear(to-tl,yellow.500,teal.500)",
-        }}
-      >View our Sponsorship Package</Button>
+      <Link href = "/assets/Blairhacks_5 Sponsorship Package.pdf" textColor = "white">
+        <Button mt={6}
+          bgGradient="linear(to-tl,yellow.500,teal.500)"
+          _hover={{
+            bgGradient: "linear(to-tl,yellow.500,teal.500)",
+          }}
+          _active={{
+            bgGradient: "linear(to-tl,yellow.500,teal.500)",
+          }}
+        >View our Sponsorship Package
+        </Button>
+      </Link>
     </Container>
   );
 }

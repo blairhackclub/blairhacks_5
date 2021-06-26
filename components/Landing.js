@@ -19,7 +19,13 @@ export default function Landing({ ...rest }) {
   return (
     <Container maxW="container.lg" py={{ base: 8, sm: 20 }} {...rest}>
       <Flex direction={{ base: "column", sm: "row" }}>
+      
         <Box flex={3} px={4} pr={8}>
+        <motion.div 
+            initial={{ x: -200 }}
+            animate={{ x: 0 }}
+            transition = {{ duration: 1 }}
+          >
           <Heading as="h1" size="2xl" mt={2}>
             BlairHacks_5
           </Heading>
@@ -57,11 +63,12 @@ export default function Landing({ ...rest }) {
               }}
             >Sponsor Us</Button>
           </Stack>
+          </motion.div>
         </Box>
         <Flex flex={2} align="center" justify="flex-end" display={{ base: "none", md: "block" }}>
           <motion.div 
             initial={{ x: 200 }}
-            animate={{ x: 0, scale: [.9, 1.1, 1] }}
+            animate={{ x: 0 }}
             transition = {{ duration: 1 }}
           >
             <Image src="https://pbs.twimg.com/media/DtS8rjmXcAI9x9C?format=jpg&name=small" w="90%" borderRadius="xl"/>

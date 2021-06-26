@@ -20,6 +20,9 @@ export default function Footer() {
       <Link href="https://twitter.com/blair_hacks" isExternal>
         <IconButton icon={<Icon glyph="twitter" size={24}/>} isRound/>
       </Link>
+      <Link href="https://twitter.com/blair_hacks" isExternal>
+        <IconButton icon={<Icon glyph="twitter" size={24}/>} isRound/>
+      </Link>
 
       <Flex align="center" justify="center" px={2}>
         <Link href="https://blair.hackclub.com" isExternal>

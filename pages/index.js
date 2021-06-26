@@ -23,7 +23,7 @@ export default function Home() {
 
       <Landing />
 
-      <motion.div initial={{ y: 200 }} animate={{ y: 0, scale: [.9, 1.1, 1] }} transition={{ duration: 1 }}>
+      <motion.div initial={{ scale: 0.5 }} animate={{ scale: 1}} transition={{ duration: 1 }}>
         <Element name="about">
           <About/>
         </Element>
