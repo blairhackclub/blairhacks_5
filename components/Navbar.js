@@ -11,6 +11,7 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
+import { Link as ScrollLink } from 'react-scroll';
 
 import Link from '../components/Link';
 
@@ -19,8 +20,8 @@ export default function Navbar({ ...rest }) {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <Box {...rest}>
-      <Container maxW="container.xl" px={8} py={3}>
+    <Box {...rest} bg = "black">
+      <Container maxW="container.xl" px={8} py={2}>
         <Flex as="nav" direction="row" align="center" justify="space-between" wrap="wrap">
           <Logo/>
           <Toggle toggle={toggle} isOpen={isOpen}/>
@@ -36,7 +37,8 @@ function Logo({ ...rest }) {
     <Link href="/" color="white" noUnderline>
       <Flex align="center" {...rest}>
         <Image
-          src="/assets/logo.png" w="64px"
+          src="/assets/logo.png" 
+          w="56px"
           mr={1}
         />
       </Flex>
@@ -54,10 +56,18 @@ function Links({ ...rest }) {
           align="center"
           spacing={4}
         >
-          <Link href="#tracks" fontWeight="semibold">Tracks</Link>
-          <Link href="#faq" fontWeight="semibold">FAQ</Link>
-          <Link href="#team" fontWeight="semibold">Team</Link>
-          <Link href="#sponsors" fontWeight="semibold">Sponsors</Link>
+          {/* <ScrollLink to = "tracks" spy={true} smooth={true} offset={50} duration={500}>
+            <Link href = "" fontWeight="semibold">Tracks</Link>
+          </ScrollLink> */}
+          <ScrollLink to="team" spy={true} smooth={true} offset={50} duration={500}>
+            <Link href="" fontWeight="semibold">Team</Link>
+          </ScrollLink>
+          <ScrollLink to="faq" spy={true} smooth={true} offset={50} duration={500}>
+            <Link href="" fontWeight="semibold">FAQ</Link>
+          </ScrollLink>
+          <ScrollLink to="sponsors" spy={true} smooth={true} offset={50} duration={500}>
+            <Link href="" fontWeight="semibold">Sponsors</Link>
+          </ScrollLink>
         </Stack>
         <Stack
           direction="row"

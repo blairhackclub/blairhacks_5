@@ -11,7 +11,7 @@ import Link from "../components/Link";
 
 export default function About() {
   return (
-    <Box py={{ base: 8, sm: 20 }} mx={4}>
+    <Box py={{ base: 8, sm: 5 }} mx={4}>
       <Container maxW="container.md" px={8} py={10}
         bg="bg.dark"
         borderRadius="xl"

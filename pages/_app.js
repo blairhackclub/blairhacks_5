@@ -1,11 +1,11 @@
-import '../styles/globals.css';
-import Head from 'next/head';
+import "../styles/globals.css";
+import Head from "next/head";
 import { ChakraProvider } from "@chakra-ui/react";
-import theme from '../lib/theme';
+import theme from "../lib/theme";
 
-import {
-  Box,
-} from '@chakra-ui/react';
+import { Box } from "@chakra-ui/react";
+
+import Navbar from "../components/Navbar";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -14,10 +14,11 @@ function MyApp({ Component, pageProps }) {
         <title>BlairHacks_5</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      
+
       <ChakraProvider theme={theme} resetCSS>
         <Box minH="100vh" bg="bg.extradark">
-          <Component {...pageProps}/>
+          <Navbar />
+          <Component mt={20} {...pageProps} />
         </Box>
       </ChakraProvider>
     </>

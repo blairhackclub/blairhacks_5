@@ -9,6 +9,7 @@ import {
   Text,
   Image,
 } from '@chakra-ui/react';
+import { motion } from "framer-motion";
 
 import Button from "../components/Button";
 import Em from "../components/Em";
@@ -58,8 +59,14 @@ export default function Landing({ ...rest }) {
           </Stack>
         </Box>
         <Flex flex={2} align="center" justify="flex-end" display={{ base: "none", md: "block" }}>
-          <Image src="https://pbs.twimg.com/media/DtS8rjmXcAI9x9C?format=jpg&name=small" w="90%" borderRadius="xl"/>
-        </Flex  >
+          <motion.div 
+            initial={{ x: 200 }}
+            animate={{ x: 0, scale: [.9, 1.1, 1] }}
+            transition = {{ duration: 1 }}
+          >
+            <Image src="https://pbs.twimg.com/media/DtS8rjmXcAI9x9C?format=jpg&name=small" w="90%" borderRadius="xl"/>
+          </motion.div>
+        </Flex >
       </Flex>
     </Container>
   )
