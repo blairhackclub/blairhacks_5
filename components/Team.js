@@ -7,7 +7,7 @@ import {
 
 export default function Team() {
     return (
-        <Container maxW="container.md" px={8} pt={8} pb={2}>
+        <Container maxW="container.md" px={8} pt={6} pb={2}>
             <Heading as="h1" size="2xl" mt={2} align="center">
                 Our Team
             </Heading>

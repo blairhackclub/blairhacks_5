@@ -1,16 +1,14 @@
 import React from 'react';
 
-import { motion } from 'framer-motion';
-
 import {
   Container,
   Flex,
   Text,
   Heading,
-  Button,
   Image,
 } from '@chakra-ui/react';
 
+import Button from "../components/Button";
 import Link from '../components/Link';
 
 export default function Custom404() {
@@ -24,12 +22,7 @@ export default function Custom404() {
         <Heading as="h1" size="xl" mt={2}>404!</Heading>
         <Text size="lg">We couldn't find that page.</Text>
         <Link href="/" noUnderline>
-          <motion.button
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            <Button mt={4} size="sm">Go home</Button>
-          </motion.button>
+          <Button mt={4} size="sm">Go home</Button>
         </Link>
       </Container>
     </Flex>

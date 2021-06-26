@@ -11,6 +11,7 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
+import { Link as ScrollLink } from 'react-scroll';
 
 import Link from '../components/Link';
 
@@ -19,8 +20,8 @@ export default function Navbar({ ...rest }) {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <Box bg="black" {...rest} className = "navbar">
-      <Container maxW="container.lg" px={4} py={3}>
+    <Box {...rest} bg = "black">
+      <Container maxW="container.xl" px={8} py={2}>
         <Flex as="nav" direction="row" align="center" justify="space-between" wrap="wrap">
           <Logo/>
           <Toggle toggle={toggle} isOpen={isOpen}/>
@@ -33,15 +34,13 @@ export default function Navbar({ ...rest }) {
 
 function Logo({ ...rest }) {
   return (
-    <Link href="https://blairhacks.com" color="white" noUnderline>
+    <Link href="/" color="white" noUnderline>
       <Flex align="center" {...rest}>
         <Image
-          src="/assets/logo.png" w="36px"
+          src="/assets/logo.png" 
+          w="56px"
           mr={1}
         />
-        <Heading size="md" fontWeight="semibold">
-          BlairHacks
-        </Heading>
       </Flex>
     </Link>
   );
@@ -49,39 +48,57 @@ function Logo({ ...rest }) {
 
 function Links({ ...rest }) {
   return (
-    <Box {...rest} flexBasis={{ base: "100%", md: "auto" }}>
-      <Stack 
-        direction={["column", "row", "row", "row"]} 
-        h="100%" 
-        justify={["center", "space-between", "flex-end", "flex-end"]}
-        align="center"
-        spacing={4}
-        pt={[4, 4, 0, 0]}
-      >
-          <Link href="/team" fontWeight="semibold">Team</Link>
-          <Link href="/sponsers" fontWeight="semibold">Sponsers</Link>
-          <Link href="/schedule" fontWeight="semibold">Schedule</Link>
-          <MenuItem href="https://dash.blairhacks.com/register" isExternal>Register</MenuItem>
-
-      </Stack>
+    <Box {...rest} pl={6} flexBasis={{ base: "100%", md: "auto" }} >
+      <Flex direction={["column", "row", "row", "row"]} pt={[8, 8, 0, 0]} pb={[4, 4, 0, 0]}>
+        <Stack flex={1}
+          direction="row"
+          justify={["center", "flex-start", "flex-start", "flex-start"]}
+          align="center"
+          spacing={4}
+        >
+          {/* <ScrollLink to = "tracks" spy={true} smooth={true} offset={50} duration={500}>
+            <Link href = "" fontWeight="semibold">Tracks</Link>
+          </ScrollLink> */}
+          <ScrollLink to = "team" spy={true} smooth={true} offset={50} duration={500}>
+            <Link href = "" fontWeight="semibold">Team</Link>
+          </ScrollLink>
+          <ScrollLink to = "faq" spy={true} smooth={true} offset={50} duration={500}>
+            <Link href = "" fontWeight="semibold">FAQ</Link>
+          </ScrollLink>
+          <ScrollLink to = "sponsors" spy={true} smooth={true} offset={50} duration={500}>
+            <Link href = "" fontWeight="semibold">Sponsors</Link>
+          </ScrollLink>
+        </Stack>
+        <Stack
+          direction="row"
+          justify={["center", "flex-start", "flex-end", "flex-end"]}
+          align="center"
+          spacing={4}
+          pt={[4, 0, 0, 0]}
+        >
+          <MenuButton href="https://dash.blairhacks.com/login">Login</MenuButton>
+          <MenuButton href="https://dash.blairhacks.com/register">Register</MenuButton>
+        </Stack>
+      </Flex>
     </Box>
   );
 }
 
-function MenuItem(props) {
+function MenuButton(props) {
   const { isExternal, href, children, type, ...rest } = props;
   
   const bgDesktop = useColorModeValue("brand.50", "brand.900");
   const bgHoverDesktop = useColorModeValue("brand.100", "brand.800");
 
   return (
-    <Link isExternal={isExternal} href={href} textColor = 'white' noUnderline>
+    <Link isExternal={isExternal} href={href} textColor='white' noUnderline>
       <Button
         size="sm"
         bg={["brand.400", "brand.400", bgDesktop, bgDesktop]}
         _hover={{
           bg: ["brand.300", "brand.300", bgHoverDesktop, bgHoverDesktop]
         }}
+        {...rest}
       >
         {children}
       </Button>
