@@ -24,9 +24,6 @@ export default function About() {
         <Text mt={3}>
           BlairHacks is <Link href="https://mbhs.edu" isExternal>Montgomery Blair</Link>'s premier high-school hackathon. Each year, Blair students come together to host this free-to-attend hackathon to all high-school students in the DMV area.
         </Text>
-        <Text mt={3}>
-          We're back for our 5th annual BlairHacks! Under the <i>Blair Engineers' Guild</i>, the previous BlairHacks events have seen tremendous success with over 150 signups and 80 in-person attendees. As the new organizers of the upcoming <i>Blair Hack Club</i>, we can't wait to continue this amazing tradition for DMV high schoolers.
-        </Text>
 
         <Heading as="h2" size="lg" mt={8}
           fontWeight="semibold"
@@ -34,7 +31,7 @@ export default function About() {
           Our Mission
         </Heading>
         <Text mt={2}>
-          Our goal for BlairHacks is to share our interest in CS and tech with high schoolers all around the DMV area. We've prepared an event with an environment and resources that most schools don't provide, where people can come together and create amazing things with code and technology. Our mission is to help everyone, no matter their experience or background, learn and be able to engage and participate in the CS community.
+          Our mission for BlairHacks is to share our passion in CS and tech with high schoolers all around the DMV area. We've prepared an event with an environment and resources that most schools don't provide, where people can come together and create amazing things with code and technology.
         </Text>
       </Container>
     </Box>

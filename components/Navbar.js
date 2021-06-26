@@ -20,7 +20,11 @@ export default function Navbar({ ...rest }) {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <Box {...rest} bg = "black">
+    <Box
+      position="sticky" top={0} zIndex={999}
+      bg={"rgba(20, 20, 20, .9)"}
+      {...rest}
+    >
       <Container maxW="container.xl" px={8} py={2}>
         <Flex as="nav" direction="row" align="center" justify="space-between" wrap="wrap">
           <Logo/>
@@ -48,36 +52,50 @@ function Logo({ ...rest }) {
 
 function Links({ ...rest }) {
   return (
-    <Box {...rest} pl={6} flexBasis={{ base: "100%", md: "auto" }}>
-      <Flex direction={["column", "row", "row", "row"]} pt={[8, 8, 0, 0]} pb={[4, 4, 0, 0]}>
+    <Box {...rest} pl={4} flexBasis={{ base: "100%", md: "auto" }}>
+      <Flex 
+        direction={["column", "column", "row", "row"]} 
+        py={[4, 4, 0, 0]}
+      >
         <Stack flex={1}
           direction="row"
-          justify={["center", "flex-start", "flex-start", "flex-start"]}
+          justify={["center", "center", "flex-start", "flex-start"]}
           align="center"
           spacing={4}
         >
-          {/* <ScrollLink to = "tracks" spy={true} smooth={true} offset={50} duration={500}>
-            <Link href = "" fontWeight="semibold">Tracks</Link>
-          </ScrollLink> */}
-          <ScrollLink to="team" spy={true} smooth={true} offset={50} duration={500}>
-            <Link href="" fontWeight="semibold">Team</Link>
+          <ScrollLink to="about" spy={true} smooth={true} offset={-100} duration={500}>
+            <Link as="span" href="/" fontWeight="semibold">About</Link>
           </ScrollLink>
-          <ScrollLink to="faq" spy={true} smooth={true} offset={50} duration={500}>
-            <Link href="" fontWeight="semibold">FAQ</Link>
+          {/*
+          <ScrollLink to="tracks" spy={true} smooth={true} offset={-80} duration={500}>
+            <Link as="span" href="/" fontWeight="semibold">Tracks</Link>
           </ScrollLink>
-          <ScrollLink to="sponsors" spy={true} smooth={true} offset={50} duration={500}>
-            <Link href="" fontWeight="semibold">Sponsors</Link>
+          */}
+          {/*
+          <ScrollLink to="team" spy={true} smooth={true} offset={-80} duration={500}>
+            <Link as="span" href="/" fontWeight="semibold">Team</Link>
+          </ScrollLink>
+          */}
+          {/*
+          <ScrollLink to="faq" spy={true} smooth={true} offset={-80} duration={500}>
+            <Link as="span" href="/" fontWeight="semibold">FAQ</Link>
+          </ScrollLink>
+          */}
+          <ScrollLink to="sponsors" spy={true} smooth={true} offset={-80} duration={500}>
+            <Link as="span" href="/" fontWeight="semibold">Sponsors</Link>
           </ScrollLink>
         </Stack>
         <Stack
           direction="row"
-          justify={["center", "flex-start", "flex-end", "flex-end"]}
+          justify={["center", "center", "flex-end", "flex-end"]}
           align="center"
           spacing={4}
-          pt={[4, 0, 0, 0]}
+          pt={[4, 4, 0, 0]}
         >
+          {/* UPDATE WHEN REGISTRATION STARTS
           <MenuButton href="https://dash.blairhacks.com/login">Login</MenuButton>
           <MenuButton href="https://dash.blairhacks.com/register">Register</MenuButton>
+          */}
         </Stack>
       </Flex>
     </Box>

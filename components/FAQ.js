@@ -1,13 +1,17 @@
 import React from "react";
-import { Container, Heading, Text } from "@chakra-ui/react";
+import {
+  Container,
+  Heading,
+  Text
+} from "@chakra-ui/react";
 
 export default function FAQ() {
   return (
-    <Container maxW="container.md" px={8} pt={6} pb={2}>
-      <Heading as="h1" size="2xl" mt={2} align="center">
+    <Container maxW="container.lg" px={8} py={12}>
+      <Heading as="h2" size="xl" align="center">
         FAQ
       </Heading>
-      <Text mt={12}>Coming Soon</Text>
+      <Text mt={3}>Coming soon</Text>
     </Container>
   );
 }
