@@ -10,6 +10,7 @@ import {
   Image,
 } from '@chakra-ui/react';
 import { motion } from "framer-motion";
+import { Link as ScrollLink } from 'react-scroll';
 
 import Button from "../components/Button";
 import Em from "../components/Em";
@@ -53,15 +54,17 @@ export default function Landing({ ...rest }) {
                 bgGradient: "linear(to-tl,purple.500,blue.500)",
               }}*/
             >Registration starts Jan 2022</Button>
-            <Button
-              bgGradient="linear(to-tl,yellow.500,teal.500)"
-              _hover={{
-                bgGradient: "linear(to-tl,yellow.500,teal.500)",
-              }}
-              _active={{
-                bgGradient: "linear(to-tl,yellow.500,teal.500)",
-              }}
-            >Sponsor Us</Button>
+            <ScrollLink  to="sponsors" spy={true} smooth={true} offset={-80} duration={500}>
+              <Button
+                bgGradient="linear(to-tl,yellow.500,teal.500)"
+                _hover={{
+                  bgGradient: "linear(to-tl,yellow.500,teal.500)",
+                }}
+                _active={{
+                  bgGradient: "linear(to-tl,yellow.500,teal.500)",
+                }}
+              >Sponsor Us</Button>
+            </ScrollLink>
           </Stack>
           </motion.div>
         </Box>
