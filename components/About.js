@@ -35,7 +35,7 @@ export default function About() {
           Our Mission
         </Heading>
         <Text mt={2}>
-          Our Mission at BlairHacks is to share our passion for computer science with high school students across the DMV area. BlairHacks provides an unparalleled environment with resources that empower students to pursue their passions in the tech field and collaborate with like-minded developers. Sponsoring BlairHacks is a incredible opportunity to promote computer science and engineering education and further the movement of student innovators.
+          Our Mission at BlairHacks is to share our passion for computer science with high school students across the DMV area. BlairHacks provides an unparalleled environment with resources that empower students to pursue their passions in the computer science field and collaborate with like-minded developers. Sponsoring BlairHacks is an incredible opportunity to promote computer science and engineering education and further the movement of student innovators.
         </Text>
       </Container>
     </Box>
