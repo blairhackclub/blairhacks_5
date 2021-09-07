@@ -41,11 +41,9 @@ export default function Home() {
       </Element>
       */}
 
-      {/*
       <Element name="faq">
         <FAQ/>
       </Element>
-      */}
 
       <Element name="sponsors">
         <Sponsors/>

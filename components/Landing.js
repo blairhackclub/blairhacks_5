@@ -74,7 +74,7 @@ export default function Landing({ ...rest }) {
             animate={{ x: 0 }}
             transition = {{ duration: 1 }}
           >
-            <Image src="https://pbs.twimg.com/media/DtS8rjmXcAI9x9C?format=jpg&name=small" w="90%" borderRadius="xl"/>
+            <Image src="/assets/steeple.jpg" w="90%" borderRadius="xl"/>
           </motion.div>
         </Flex >
       </Flex>

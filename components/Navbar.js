@@ -76,11 +76,11 @@ function Links({ ...rest }) {
             <Link as="span" href="/" fontWeight="semibold">Team</Link>
           </ScrollLink>
           */}
-          {/*
+          
           <ScrollLink to="faq" spy={true} smooth={true} offset={-80} duration={500}>
             <Link as="span" href="/" fontWeight="semibold">FAQ</Link>
           </ScrollLink>
-          */}
+          
           <ScrollLink to="sponsors" spy={true} smooth={true} offset={-80} duration={500}>
             <Link as="span" href="/" fontWeight="semibold">Sponsors</Link>
           </ScrollLink>
