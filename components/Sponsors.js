@@ -10,7 +10,7 @@ import Link from "./Link";
 
 export default function Sponsors() {
   return (
-    <Container maxW="container.lg" px={8} py={12} align="center">
+    <Container maxW="container.lg" px={8} py={4} align="center">
       <Heading as="h2" size="xl">
         Sponsors
       </Heading>

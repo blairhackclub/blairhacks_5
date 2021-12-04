@@ -8,6 +8,7 @@ import {
   Heading,
   Text,
   Image,
+  useBreakpointValue,
 } from '@chakra-ui/react';
 import { motion } from "framer-motion";
 import { Link as ScrollLink } from 'react-scroll';
@@ -18,11 +19,10 @@ import Link from "../components/Link";
 
 export default function Landing({ ...rest }) {
   return (
-    <Container maxW="container.lg" py={{ base: 8, sm: 20 }} {...rest}>
+    <Container maxW="container.md" py={{ base: 8, sm: 20 }} {...rest}>
       <Flex direction={{ base: "column", sm: "row" }}>
-      
-        <Box flex={3} px={4} pr={8}>
-        <motion.div 
+        <Box flex={3} px={4}>
+          <motion.div 
             initial={{ x: -200 }}
             animate={{ x: 0 }}
             transition = {{ duration: 1 }}
@@ -31,17 +31,13 @@ export default function Landing({ ...rest }) {
             BlairHacks_5
           </Heading>
           <Text mt={2}>
-            FEB 18-19, 2022&nbsp;
-            <Link href="https://www.google.com/maps/dir//39.018294,-77.011105" isExternal>
+            February 18-19, 2022&nbsp;
+            <Link href="https://www.google.com/maps/place/Montgomery+Blair+High+School/@39.018671,-77.0142549,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7cf586f9b73d5:0xc227c473fffb50c7!8m2!3d39.018671!4d-77.0120662" isExternal>
               <Em semibold>@ Blair</Em>
             </Link>
           </Text>
 
-          <Text mt={4}>
-            A free, 24-hour hackathon hosted annually at MBHS for DMV high school students, featuring skill workshops, fun mini-events, and experienced mentors.
-          </Text>
-
-          <Stack mt={8} direction={{ base: "column", sm: "row" }} align="center" spacing={4}>
+          <Stack mt={8} direction={{ base: "column", sm: "row" }} align="flex-start" spacing={4}>
             {/* UPDATE WHEN REGISTRATION STARTS */}
             <Button
               fontSize="sm"
@@ -54,7 +50,8 @@ export default function Landing({ ...rest }) {
                 bgGradient: "linear(to-tl,purple.500,blue.500)",
               }}*/
             >Registration starts Jan 2022</Button>
-            <ScrollLink  to="sponsors" spy={true} smooth={true} offset={-80} duration={500}>
+            
+            <ScrollLink to="sponsors" spy={true} smooth={true} offset={-80} duration={500}>
               <Button
                 bgGradient="linear(to-tl,yellow.500,teal.500)"
                 _hover={{

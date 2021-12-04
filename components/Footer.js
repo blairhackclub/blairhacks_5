@@ -28,7 +28,7 @@ export default function Footer() {
 
       <Flex align="center" justify="center" px={2}>
         <Link href="https://blair.hackclub.com" isExternal>
-        <Image src="https://blair.hackclub.com/branding/flag-standalone.svg" height="32px"/>
+          <Image src="https://blair.hackclub.com/branding/flag-standalone.svg" height="32px"/>
         </Link>
       </Flex>
       </Stack>

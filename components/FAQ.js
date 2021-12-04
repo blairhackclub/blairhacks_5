@@ -14,7 +14,7 @@ import faq from '../data/faq';
 
 export default function FAQ() {
   return (
-    <Container maxW="container.lg" px={8} py={12}>
+    <Container maxW="container.lg" px={2} py={12}>
       <Heading as="h2" size="xl" align="center">
         FAQ
       </Heading>

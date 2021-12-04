@@ -11,6 +11,10 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>BlairHacks_5</title>
         <link rel="icon" href="/favicon.ico" />
+        
+        <meta property="og:image" content="/assets/logo.png" key="ogimage"/>
+        <meta property="og:site_name" content="BlairHacks" key="ogsitename"/>
+        <meta name='theme-color' content="#141414"/>
       </Head>
 
       <ChakraProvider theme={theme} resetCSS>
