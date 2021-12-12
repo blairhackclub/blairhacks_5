@@ -20,13 +20,8 @@ export default function Sponsors() {
 
       <Link href = "/assets/Blairhacks_5 Sponsorship Package.pdf" textColor = "white">
         <Button mt={6}
-          bgGradient="linear(to-tl,yellow.500,teal.500)"
-          _hover={{
-            bgGradient: "linear(to-tl,yellow.500,teal.500)",
-          }}
-          _active={{
-            bgGradient: "linear(to-tl,yellow.500,teal.500)",
-          }}
+          colorScheme="green"
+          variant="outline"
         >View our Sponsorship Package
         </Button>
       </Link>
