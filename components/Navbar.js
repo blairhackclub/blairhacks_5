@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import {
   Container,
@@ -22,65 +22,36 @@ import { motion } from "framer-motion";
 import Link from '../components/Link';
 
 export default function Navbar({ ...rest }) {
-  const { isOpen, onToggle } = useDisclosure()
-
-  const links = (
-    <Stack flex={1} px={6} pt={{base: "1em", md: 0}}
-      direction={{base: "column", md: "row"}}
-      align="center"
-      spacing={5}
-      whiteSpace="nowrap"
-      display="flex"
-    >
-      <ScrollLink to="about" spy={true} smooth={true} offset={-50} duration={500}>
-        <Link as="span" href="/" fontWeight="semibold">About</Link>
-      </ScrollLink>
-
-      <ScrollLink to="getinvolved" spy={true} smooth={true} offset={-50} duration={500}>
-        <Link as="span" href="/" fontWeight="semibold">Get Involved</Link>
-      </ScrollLink>
-      
-      <ScrollLink to="faq" spy={true} smooth={true} offset={-50} duration={500}>
-        <Link as="span" href="/" fontWeight="semibold">FAQ</Link>
-      </ScrollLink>
-      
-      <ScrollLink to="sponsors" spy={true} smooth={true} offset={-50} duration={500}>
-        <Link as="span" href="/" fontWeight="semibold">Sponsors</Link>
-      </ScrollLink>
-    </Stack>
-  )
-
-  const navbar = useBreakpointValue({ md: links, base: 
-    <Collapse startingHeight={{base: 0, md: "auto"}} in={isOpen}>
-      { links }
-    </Collapse>
-  })
+  const { isOpen, onToggle } = useDisclosure();
 
   return (
     <Box
       position="sticky" top={0} zIndex={999}
       bg={"rgba(20, 20, 20, .9)"}
       overflowX="auto"
-      padding="0.5em"
       {...rest}
     >
       <Container maxW="container.xl" px={0} py={2}>
         <Flex as="nav" direction="row" px={3}>
           <Logo/>
 
-          <Spacer display={{base: 'block', md: 'none'}}/>
+          <Spacer display={{base: 'block', sm: 'none'}}/>
 
-          { navbar }
+          {useBreakpointValue({ sm: <Links/>, base: 
+            <Collapse startingHeight={{base: 0, sm: "auto"}} in={isOpen}>
+              <Links/>
+            </Collapse>
+          })}
 
           <Spacer />
 
           <Box 
-            display={{base: "flex", md: "none"}}
-            padding="1rem"
+            display={{base: "flex", sm: "none"}}
+            p={3}
             right="0"
           >
 
-            {!isOpen ? <HamburgerIcon onClick={onToggle} /> : <CloseIcon onClick={onToggle} />}
+            {!isOpen ? <HamburgerIcon w={5} h={5} onClick={onToggle}/> : <CloseIcon onClick={onToggle}/>}
             
           </Box>
 
@@ -103,36 +74,28 @@ function Logo({ ...rest }) {
   );
 }
 
-function MenuButton(props) {
-  const { isExternal, href, children, type, ...rest } = props;
-  
-  const bgDesktop = useColorModeValue("brand.50", "brand.900");
-  const bgHoverDesktop = useColorModeValue("brand.100", "brand.800");
+function Links({ ...rest }) {
+  return <Stack flex={1} px={6} py={4}
+    direction={{base: "column", sm: "row"}}
+    align="center"
+    spacing={5}
+    whiteSpace="nowrap"
+    display="flex"
+  >
+    <ScrollLink to="about" spy={true} smooth={true} offset={-50} duration={500}>
+      <Link as="span" href="/" fontWeight="semibold">About</Link>
+    </ScrollLink>
 
-  return (
-    <Link isExternal={isExternal} href={href} textColor='white' noUnderline>
-      <Button
-        size="sm"
-        bg={["brand.400", "brand.400", bgDesktop, bgDesktop]}
-        _hover={{
-          bg: ["brand.300", "brand.300", bgHoverDesktop, bgHoverDesktop]
-        }}
-        {...rest}
-      >
-        {children}
-      </Button>
-    </Link>
-  );
-}
-
-function Toggle(props) {
-  const { toggle, isOpen } = props;
-  return (
-    <Box 
-      display={{ base: "block", md: "none" }} p={2}
-      onClick={toggle}
-    >
-      {isOpen ? <CloseIcon/> : <HamburgerIcon w={5} h={5}/>}
-    </Box>
-  );
+    <ScrollLink to="getinvolved" spy={true} smooth={true} offset={-50} duration={500}>
+      <Link as="span" href="/" fontWeight="semibold">Get Involved</Link>
+    </ScrollLink>
+    
+    <ScrollLink to="faq" spy={true} smooth={true} offset={-50} duration={500}>
+      <Link as="span" href="/" fontWeight="semibold">FAQ</Link>
+    </ScrollLink>
+    
+    <ScrollLink to="sponsors" spy={true} smooth={true} offset={-50} duration={500}>
+      <Link as="span" href="/" fontWeight="semibold">Sponsors</Link>
+    </ScrollLink>
+  </Stack>;
 }
