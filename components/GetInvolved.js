@@ -55,7 +55,7 @@ export default function GetInvolved() {
         </Box>
       </SimpleGrid>
       <Text fontStyle="italic" mt={6}>
-        Mentors, and judges are ineligible to participate in the hackathon.
+        Mentors and judges are ineligible to participate in the hackathon.
         Swag will still be provided!
       </Text>
     </Container>

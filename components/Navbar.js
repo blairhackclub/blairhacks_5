@@ -75,7 +75,7 @@ function Logo({ ...rest }) {
 }
 
 function Links({ ...rest }) {
-  return <Stack flex={1} px={6} py={4}
+  return <Stack flex={1} px={6} py={3}
     direction={{base: "column", sm: "row"}}
     align="center"
     spacing={5}

@@ -9,23 +9,23 @@ export default [
   },
   {
     question: "Where/when will BlairHacks_5 take place?",
-    answer: "BlairHacks 5 will take place virtually from February 18-20, 2022. Keynotes will be delivered through Zoom. Make sure to join our discord for the most up-to-date information about the event."
+    answer: "BlairHacks_5 will take place virtually from February 18-20, 2022. Keynotes will be delivered through Zoom. Make sure to join our Discord for the most up-to-date information about the event."
   },
   {
-    question: "Am I eligible to come?",
+    question: "Am I eligible to participate?",
     answer: "Any high school student in the DMV is eligible to come. Just make sure you have access to internet and a computer you can work on."
   },
   {
-    question: "I'm new to coding. Can I still come?",
+    question: "I'm new to coding. Can I still participate?",
     answer: "Yes! If you are a beginner, you can attend our workshops that we run throughout the event. They'll cover the basics of different tools you can use to build your hack. We've even got a track just for beginners!"
   },
   {
-    question: "Does it cost money to come?",
+    question: "Does it cost money to participate?",
     answer: "Nope! BlairHacks is completely free to attend."
   },
   {
     question: "Can I participate as a mentor / judge?",
-    answer: "Yes! We're open to all the help we can get. See the \"Get Involved\" portion of this site for more info and to apply."
+    answer: "Yes! We're open to all the help we can get. See the \"Get Involved\" portion of this page for more info and to apply."
   },
   {
     question: "I have more questions!",

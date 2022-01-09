@@ -8,6 +8,8 @@ import {
   Heading,
   Text,
   Image,
+  FormControl,
+  FormHelperText,
   useBreakpointValue,
 } from '@chakra-ui/react';
 import { motion } from "framer-motion";
@@ -40,27 +42,30 @@ export default function Landing({ ...rest }) {
 
           <Stack mt={8} direction={{ base: "column", sm: "row" }} align="flex-start" spacing={4}>
             {/* UPDATE WHEN REGISTRATION STARTS */}
-            <Link href = "https://live.blairhacks.com" noColor isExternal>
-            <Button
-              fontSize="sm"
-              
-              bgGradient="linear(to-tl,purple.500,blue.500)"
-              _hover={{
-                bgGradient: "linear(to-tl,purple.500,blue.500)",
-              }}
-              _active={{
-                bgGradient: "linear(to-tl,purple.500,blue.500)",
-              }}
-            >Register Today!</Button>
-            </Link>
+            <FormControl as='fieldset'>
+              <Link href="https://live.blairhacks.com" noColor isExternal>
+                <Button
+                  fontSize="sm"
+                  
+                  bgGradient="linear(to-tl,purple.500,blue.500)"
+                  _hover={{
+                    bgGradient: "linear(to-tl,purple.500,blue.500)",
+                  }}
+                  _active={{
+                    bgGradient: "linear(to-tl,purple.500,blue.500)",
+                  }}
+                >Register Today!</Button>
+              </Link>
+              <FormHelperText>Registration ends February 4th, 2022</FormHelperText>
+            </FormControl>
             
-            <ScrollLink to="sponsors" spy={true} smooth={true} offset={-80} duration={500}>
+            {/*<ScrollLink to="sponsors" spy={true} smooth={true} offset={-80} duration={500}>
               <Button
                 // bgGradient="linear(to-tl,yellow.500,teal.500)"
                 colorScheme="green"
                 variant="outline"
               >Sponsor Us</Button>
-            </ScrollLink>
+            </ScrollLink>*/}
           </Stack>
           </motion.div>
         </Box>

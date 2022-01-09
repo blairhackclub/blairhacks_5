@@ -22,7 +22,7 @@ export default function About() {
           We're back for BlairHacks_5!
         </Heading>
         <Text mt={3}>
-          BlairHacks is a 36-hour hackathon hosted annually by <Link href="https://mbhs.edu" isExternal>MBHS</Link> students in Silver Spring, MD.
+          BlairHacks_5 is a 36-hour hackathon hosted by <Link href="https://mbhs.edu" isExternal>MBHS</Link> students in Silver Spring, MD.
           At BlairHacks, high school students in the DMV area are challenged to bring their innovative ideas to life in the form of websites, apps, and robots.
           Our hackathon is free and accessible to all high school students thanks to our wonderful sponsors.
         </Text>
@@ -50,7 +50,7 @@ export default function About() {
         <Text mt={2}>
           {/* * Due to COVID-19, we aren't able to host an overnight event this year, but don't worry — we will still offer an in-person experience.
           We've decided to host BlairHacks_5 in two portions: a virtual portion and an in-person portion. */}
-          * Due to COVID-19, we aren't able to host an in-person event this year. We've decided to host Blairhacks_5 virtually due to safety concerns.
+          Due to COVID-19, we aren't able to host an in-person event this year. BlairHacks_5 will be hosted virtually via Discord and Zoom!
         </Text>
         <Text mt={2}>
           {/* The virtual portion will take place on Day 1 and will consist of a few virtual activities starting in the afternoon.
@@ -60,7 +60,7 @@ export default function About() {
 
         </Text>
         <Text mt={2}>
-          See our live site as the event nears. We will have a more detailed schedule there as well as everything else you'll need to know for attending!
+          See our <Link href="https://live.blairhacks.com" isExternal>live site</Link> as the event nears. We will have a more detailed schedule there as well as everything else you'll need to know for attending!
         </Text>
       </Container>
     </Box>
