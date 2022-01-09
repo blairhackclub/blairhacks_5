@@ -5,12 +5,12 @@ import {
   Link as ChakraLink
 } from '@chakra-ui/react';
 
-export default function Link({ href, noUnderline, isExternal, ...rest }) {
+export default function Link({ href, noUnderline, isExternal, noColor, ...rest }) {
   return (
     <>
       {isExternal ?
         <ChakraLink href={href}
-          color="red.600"
+          color={noColor ? "white" : "red.600"}
           style={{ textDecoration: noUnderline ? "none" : "no" }}
           {...rest} isExternal
         />

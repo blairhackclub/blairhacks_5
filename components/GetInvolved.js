@@ -17,7 +17,7 @@ export default function GetInvolved() {
       </Heading>
 
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={4}>
-        <Box>
+        {/* <Box>
           <Heading as="h3" size="md" mt={5}>Volunteers</Heading>
           <Text fontSize="md" mt={2}>
             Volunteers are essential to any event, especially our hackathon.
@@ -28,7 +28,7 @@ export default function GetInvolved() {
               Become a Volunteer
             </Button>
           </Link>
-        </Box>
+        </Box> */}
         <Box>
           <Heading as="h3" size="md" mt={5}>Mentors</Heading>
           <Text fontSize="md" mt={2}>
@@ -55,7 +55,7 @@ export default function GetInvolved() {
         </Box>
       </SimpleGrid>
       <Text fontStyle="italic" mt={6}>
-        Volunteers, mentors, and judges are ineligible to participate in the hackathon.
+        Mentors, and judges are ineligible to participate in the hackathon.
         Swag will still be provided!
       </Text>
     </Container>

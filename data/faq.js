@@ -9,11 +9,11 @@ export default [
   },
   {
     question: "Where/when will BlairHacks_5 take place?",
-    answer: "BlairHacks_5 will happen on February 18-19, 2022. We're planning to host the event in two portions: a virtual portion (day 1) and a hybrid portion (day 2). Attendees must attend both portions of the hackathon."
+    answer: "BlairHacks 5 will take place virtually from February 18-20, 2022. Keynotes will be delivered through Zoom. Make sure to join our discord for the most up-to-date information about the event."
   },
   {
     question: "Am I eligible to come?",
-    answer: "Any high school student in the DMV is eligible to come. Just make sure you have to ride to drop you off and pick you up."
+    answer: "Any high school student in the DMV is eligible to come. Just make sure you have access to internet and a computer you can work on."
   },
   {
     question: "I'm new to coding. Can I still come?",
@@ -24,7 +24,7 @@ export default [
     answer: "Nope! BlairHacks is completely free to attend."
   },
   {
-    question: "Can I participate as a volunteer / mentor / judge?",
+    question: "Can I participate as a mentor / judge?",
     answer: "Yes! We're open to all the help we can get. See the \"Get Involved\" portion of this site for more info and to apply."
   },
   {
