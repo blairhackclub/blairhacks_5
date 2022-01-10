@@ -8,6 +8,8 @@ import {
   Heading,
   Text,
   Image,
+  FormControl,
+  FormHelperText,
   useBreakpointValue,
 } from '@chakra-ui/react';
 import { motion } from "framer-motion";
@@ -32,33 +34,38 @@ export default function Landing({ ...rest }) {
             BlairHacks_5
           </Heading>
           <Text mt={2}>
-            February 18-19, 2022&nbsp;
-            <Link href="https://www.google.com/maps/place/Montgomery+Blair+High+School/@39.018671,-77.0142549,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7cf586f9b73d5:0xc227c473fffb50c7!8m2!3d39.018671!4d-77.0120662" isExternal>
-              <Em semibold>@ Blair</Em>
-            </Link>
+            February 18-20, 2022&nbsp;
+          </Text>
+          <Text>
+            <Em semibold>Virtual, High School Students</Em>
           </Text>
 
           <Stack mt={8} direction={{ base: "column", sm: "row" }} align="flex-start" spacing={4}>
             {/* UPDATE WHEN REGISTRATION STARTS */}
-            <Button
-              fontSize="sm"
-              isDisabled
-              /*bgGradient="linear(to-tl,purple.500,blue.500)"
-              _hover={{
-                bgGradient: "linear(to-tl,purple.500,blue.500)",
-              }}
-              _active={{
-                bgGradient: "linear(to-tl,purple.500,blue.500)",
-              }}*/
-            >Registration starts Jan 2022</Button>
+            <FormControl as='fieldset'>
+              <Link href="https://live.blairhacks.com" noColor isExternal>
+                <Button
+                  fontSize="sm"
+                  
+                  bgGradient="linear(to-tl,purple.500,blue.500)"
+                  _hover={{
+                    bgGradient: "linear(to-tl,purple.500,blue.500)",
+                  }}
+                  _active={{
+                    bgGradient: "linear(to-tl,purple.500,blue.500)",
+                  }}
+                >Register Today!</Button>
+              </Link>
+              <FormHelperText>Registration ends February 4th, 2022</FormHelperText>
+            </FormControl>
             
-            <ScrollLink to="sponsors" spy={true} smooth={true} offset={-80} duration={500}>
+            {/*<ScrollLink to="sponsors" spy={true} smooth={true} offset={-80} duration={500}>
               <Button
                 // bgGradient="linear(to-tl,yellow.500,teal.500)"
                 colorScheme="green"
                 variant="outline"
               >Sponsor Us</Button>
-            </ScrollLink>
+            </ScrollLink>*/}
           </Stack>
           </motion.div>
         </Box>
