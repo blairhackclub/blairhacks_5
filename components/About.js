@@ -10,6 +10,7 @@ import {
 import Link from "../components/Link";
 
 export default function About() {
+
   return (
     <Box py={8} mx={4}>
       <Container maxW="container.md" px={8} py={8}
@@ -27,7 +28,7 @@ export default function About() {
           Our hackathon is free and accessible to all high school students thanks to our wonderful sponsors.
         </Text>
 
-        <Text mt={3}>
+        <Text mt={3} mb = {8}>
           At our previous iteration in 2020, BlairHacks_4 brought together over 80 in-person attendees from 6+ high schools around the DMV.
           We're excited for another year of BlairHacks and to continue to spread our love for coding throughout our community!
         </Text>
@@ -41,6 +42,28 @@ export default function About() {
           Our mission at BlairHacks is to share our passion for computer science with high school students across the DMV area.
           BlairHacks provides an unparalleled environment with resources that empower students to pursue their passions in the computer science field and collaborate with like-minded developers.
         </Text>*/}
+
+        <div
+          className="video"
+          style={{
+            position: "relative",
+            paddingBottom: "56.25%" /* 16:9 */,
+            height: 0
+          }}
+        >
+          <iframe
+            style={{
+              borderRadius: "15px",
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%"
+            }}
+            src={`https://www.youtube.com/embed/R6IAC0obm8E`}
+            frameBorder="0"
+          />
+        </div>
 
         <Heading as="h2" size="lg" mt={8}
           fontWeight="semibold"
