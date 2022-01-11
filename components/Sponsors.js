@@ -5,7 +5,9 @@ import {
   Text,
   Image,
   Flex,
-  Box
+  Box,
+  Wrap,
+  WrapItem
 } from "@chakra-ui/react";
 
 import Button from "./Button";
@@ -19,15 +21,15 @@ export default function Sponsors() {
         Sponsors
       </Heading>
 
-      <Flex flexWrap>
+      <Wrap justify="center">
         {sponsors.map(({name, url, img}) => (
-          <Box p = {10}>
+          <WrapItem p = {5} w= "200px" justifyContent="center" alignItems="center">
             <Link href = {url} isExternal>
-              <Image width = "200px" src = {`/assets/sponsorLogos/${img}`}/>
+              <Image w = "100%" src = {`/assets/sponsorLogos/${img}`}/>
             </Link>
-          </Box>
+          </WrapItem>
         ))}
-      </Flex>
+      </Wrap>
 
       <Text mt={3}>
 				Help us make this hackathon possible! Email us at <Link href="mailto:team@blairhacks.com">team@blairhacks.com</Link>.
