@@ -25,8 +25,8 @@ export default [
 		img: "stickergiant.png"
 	},
 	{
-		name: "Wolfram Alpha",
-		url: "https://www.wolframalpha.com",
+		name: "Wolfram",
+		url: "https://www.wolfram.com",
 		img: "wolfram.png"
 	}
 ]
