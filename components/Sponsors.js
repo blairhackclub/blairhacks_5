@@ -4,10 +4,10 @@ import {
   Heading,
   Text,
   Image,
-  Flex,
-  Box,
   Wrap,
-  WrapItem
+  WrapItem,
+  Tooltip,
+  Box
 } from "@chakra-ui/react";
 
 import Button from "./Button";
@@ -22,11 +22,15 @@ export default function Sponsors() {
       </Heading>
 
       <Wrap justify="center">
-        {sponsors.map(({name, url, img}) => (
-          <WrapItem p = {5} w= "200px" justifyContent="center" alignItems="center">
-            <Link href = {url} isExternal>
-              <Image w = "100%" src = {`/assets/sponsorLogos/${img}`}/>
-            </Link>
+        {sponsors.map(({name, url, img}) => (   
+          <WrapItem p = {3} w= "200px" justifyContent="center" alignItems="center">   
+            <Tooltip hasArrow label={name}>
+              <Box p = {2}>
+                <Link href = {url} isExternal>
+                  <Image w = "100%" src = {`/assets/sponsorLogos/${img}`}/>
+                </Link>  
+              </Box>
+            </Tooltip>
           </WrapItem>
         ))}
       </Wrap>

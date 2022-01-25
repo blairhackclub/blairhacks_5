@@ -1,7 +1,7 @@
 export default [
   {
     name: "Magnet Foundation",
-		url: "https://mbhsmagnet.org",
+		url: "https://www.mbhsmagnet.org",
 		img: "magnet_foundation.png"
   },
 	{
@@ -28,5 +28,10 @@ export default [
 		name: "Wolfram",
 		url: "https://www.wolfram.com",
 		img: "wolfram.png"
+	},
+	{
+		name: "Leading Learners",
+		url: "https://linktr.ee/leadinglearners",
+		img: "leading-learners.png"
 	}
 ]
