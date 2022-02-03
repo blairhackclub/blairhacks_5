@@ -1,9 +1,14 @@
 export default [
-  {
-    name: "Magnet Foundation",
+	{
+		name: "Magnet Foundation",
 		url: "https://www.mbhsmagnet.org",
 		img: "magnet_foundation.png"
-  },
+	},
+	{
+		name: "Mindpoint Group",
+		url: "https://www.mindpointgroup.com",
+		img: "mindpoint.png"
+	},
 	{
 		name: "Dragos",
 		url: "https://dragos.com",
