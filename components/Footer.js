@@ -20,7 +20,7 @@ export default function Footer() {
       <Link href="https://twitter.com/blairhacks" isExternal>
         <IconButton icon={<Icon glyph="twitter" size={24}/>} isRound/>
       </Link>
-      <Link href="https://www.youtube.com/watch?v=R6IAC0obm8E" isExternal>
+      <Link href="https://www.youtube.com/channel/UCMefEBkMD51mlCvy3uGuhaw" isExternal>
         <IconButton icon={<Icon glyph="youtube" size={24}/>} isRound/>
       </Link>
       {/*

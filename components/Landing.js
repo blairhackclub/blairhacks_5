@@ -56,7 +56,7 @@ export default function Landing({ ...rest }) {
                   }}
                 >Register Today!</Button>
               </Link>
-              <FormHelperText>Registration ends February 4th, 2022</FormHelperText>
+              <FormHelperText>Registration ends February 18th, 2022</FormHelperText>
             </FormControl>
             
             {/*<ScrollLink to="sponsors" spy={true} smooth={true} offset={-80} duration={500}>
