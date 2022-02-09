@@ -1,24 +1,25 @@
-export default [
-	{
+export default {
+	monetary : [{
 		name: "Magnet Foundation",
 		url: "https://www.mbhsmagnet.org",
-		img: "magnet_foundation.png"
+		img: "magnet_foundation.png",
 	},
 	{
 		name: "Mindpoint Group",
 		url: "https://www.mindpointgroup.com",
-		img: "mindpoint.png"
+		img: "mindpoint.png",
 	},
 	{
 		name: "Dragos",
 		url: "https://dragos.com",
-		img: "dragos.png"
+		img: "dragos.png",
 	},
 	{
 		name: "RStudio",
 		url: "https://www.rstudio.com",
-		img: "rstudio.png"
-	},
+		img: "rstudio.png",
+	}],
+	others: [
 	{
 		name: "Digital Ocean",
 		url: "https://digitalocean.com",
@@ -27,16 +28,16 @@ export default [
 	{
 		name: "Sticker Giant",
 		url: "https://stickergiant.com",
-		img: "stickergiant.png"
+		img: "stickergiant.png",
 	},
 	{
 		name: "Wolfram",
 		url: "https://www.wolfram.com",
-		img: "wolfram.png"
-	},
+		img: "wolfram.png",
+	},	
 	{
 		name: "Leading Learners",
 		url: "https://linktr.ee/leadinglearners",
-		img: "leading-learners.png"
-	}
-]
+		img: "leading-learners.png",
+	}]
+}
