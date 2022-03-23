@@ -54,9 +54,10 @@ export default function Landing({ ...rest }) {
                   _active={{
                     bgGradient: "linear(to-tl,purple.500,blue.500)",
                   }}
-                >Register Today!</Button>
+                  disabled
+                >Rgistration is over</Button>
               </Link>
-              <FormHelperText>Registration ends February 18th, 2022</FormHelperText>
+              <FormHelperText>Event is over. Come back for BlairHacks_6 in Spring 2023!{/*Registration ends February 18th, 2022*/}</FormHelperText>
             </FormControl>
             
             {/*<ScrollLink to="sponsors" spy={true} smooth={true} offset={-80} duration={500}>
