@@ -74,7 +74,7 @@ export default function About() {
           {/* * Due to COVID-19, we aren't able to host an overnight event this year, but don't worry — we will still offer an in-person experience.
           We've decided to host BlairHacks_5 in two portions: a virtual portion and an in-person portion. 
           Due to COVID-19, we aren't able to host an in-person event this year. BlairHacks_5 will be hosted virtually via Discord and Zoom! */}
-          This year we will be hosting a in-person hackathon at Montgomery Blair High School from February 17-18, 2022.
+          This year we will be hosting a in-person hackathon at Montgomery Blair High School from February 17-18, 2023.
         </Text>
         <Text mt={2}>
           {/* The virtual portion will take place on Day 1 and will consist of a few virtual activities starting in the afternoon.

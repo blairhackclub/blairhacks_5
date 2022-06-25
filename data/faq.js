@@ -9,7 +9,7 @@ export default [
   },
   {
     question: "Where/when will BlairHacks_6 take place?",
-    answer: "BlairHacks_6 will take place in person at Montgomery Blair High School from February 17-18, 2022. Make sure to join our Discord for the most up-to-date information about the event."
+    answer: "BlairHacks_6 will take place in person at Montgomery Blair High School from February 17-18, 2023. Make sure to join our Discord for the most up-to-date information about the event."
   },
   {
     question: "Am I eligible to participate?",
