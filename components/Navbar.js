@@ -86,9 +86,9 @@ function Links({ ...rest }) {
       <Link as="span" href="/" fontWeight="semibold">About</Link>
     </ScrollLink>
 
-    <ScrollLink to="getinvolved" spy={true} smooth={true} offset={-50} duration={500}>
+    {/* <ScrollLink to="getinvolved" spy={true} smooth={true} offset={-50} duration={500}>
       <Link as="span" href="/" fontWeight="semibold">Get Involved</Link>
-    </ScrollLink>
+    </ScrollLink> */}
     
     <ScrollLink to="faq" spy={true} smooth={true} offset={-50} duration={500}>
       <Link as="span" href="/" fontWeight="semibold">FAQ</Link>

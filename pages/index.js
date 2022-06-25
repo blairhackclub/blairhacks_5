@@ -25,9 +25,9 @@ export default function Home() {
         <About/>
       </Element>
 
-      <Element name="getinvolved">
+      {/*<Element name="getinvolved">
         <GetInvolved/>
-      </Element>
+      </Element>*/}
 
       <Element name="faq">
         <FAQ/>

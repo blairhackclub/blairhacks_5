@@ -42,7 +42,8 @@ export default function Sponsors() {
       <Heading as="h2" size="xl">
         Sponsors
       </Heading>
-      <motion.div
+
+      {/* <motion.div
         ref = {ref}
         initial={{scale: 0.9, opacity: 0}}
         animate={control}
@@ -75,13 +76,13 @@ export default function Sponsors() {
             </WrapItem>
           ))}
         </Wrap>
-      </motion.div>
+          </motion.div> */}
 
       <Text mt={3}>
 				Help us make this hackathon possible! Email us at <Link href="mailto:team@blairhacks.com">team@blairhacks.com</Link>.
 			</Text>
 
-      <Link href = "/assets/Blairhacks_5 Sponsorship Package.pdf" textColor = "white">
+      <Link href = "/assets/Blairhacks_6 Sponsorship Package.pdf" textColor = "white">
         <Button mt={6}
           colorScheme="green"
           variant="outline"

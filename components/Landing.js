@@ -31,19 +31,19 @@ export default function Landing({ ...rest }) {
             
           >
           <Heading as="h1" size="2xl" mt={2}>
-            BlairHacks_5
+            BlairHacks_6
           </Heading>
           <Text mt={2}>
-            February 18-20, 2022&nbsp;
+            February 17-18, 2023&nbsp;
           </Text>
           <Text>
-            <Em semibold>Virtual, High School Students</Em>
+            <Em semibold>MBHS, High School Students</Em>
           </Text>
 
           <Stack mt={8} direction={{ base: "column", sm: "row" }} align="flex-start" spacing={4}>
             {/* UPDATE WHEN REGISTRATION STARTS */}
             <FormControl as='fieldset'>
-              <Link href="https://live.blairhacks.com" noColor isExternal>
+              <Link /*href="https://live.blairhacks.com"*/ noColor isExternal>
                 <Button
                   fontSize="sm"
                   
@@ -55,9 +55,9 @@ export default function Landing({ ...rest }) {
                     bgGradient: "linear(to-tl,purple.500,blue.500)",
                   }}
                   disabled
-                >Rgistration is over</Button>
+                >Register</Button>
               </Link>
-              <FormHelperText>Event is over. Come back for BlairHacks_6 in Spring 2023!{/*Registration ends February 18th, 2022*/}</FormHelperText>
+              <FormHelperText>Registration begins December 2022{/* Event is over. Come back for BlairHacks_6 in Spring 2023! */}{/*Registration ends February 18th, 2022*/}</FormHelperText>
             </FormControl>
             
             {/*<ScrollLink to="sponsors" spy={true} smooth={true} offset={-80} duration={500}>

@@ -8,12 +8,12 @@ export default [
     answer: "No, that's not what we mean by \"hack\"! Hacking is a general term for taking advantage of unintended aspects of systems. We apply hacking to situations in life and we create apps and programs that can solve modern, real world issues."
   },
   {
-    question: "Where/when will BlairHacks_5 take place?",
-    answer: "BlairHacks_5 will take place virtually from February 18-20, 2022. Keynotes will be delivered through Zoom. Make sure to join our Discord for the most up-to-date information about the event."
+    question: "Where/when will BlairHacks_6 take place?",
+    answer: "BlairHacks_6 will take place in person at Montgomery Blair High School from February 17-18, 2022. Make sure to join our Discord for the most up-to-date information about the event."
   },
   {
     question: "Am I eligible to participate?",
-    answer: "Any high school student in the DMV is eligible to come. Just make sure you have access to internet and a computer you can work on."
+    answer: "Any high school student in the DMV is eligible to come. Just make sure you have a ride and computer to work on"
   },
   {
     question: "I'm new to coding. Can I still participate?",

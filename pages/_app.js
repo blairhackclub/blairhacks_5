@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>BlairHacks_5</title>
+        <title>BlairHacks_6</title>
         <link rel="icon" href="/favicon.ico" />
         
         <meta name="description" content="A free, 24-hour hackathon for DMV high school students hosted annually by MBHS students in Silver Spring, MD. Join us for BlairHacks_5 in February 2022!"/>

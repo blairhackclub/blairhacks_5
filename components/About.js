@@ -20,16 +20,16 @@ export default function About() {
         <Heading as="h2" size="lg" 
           fontWeight="semibold"
         >
-          We're back for BlairHacks_5!
+          We're back for BlairHacks_6!
         </Heading>
         <Text mt={3}>
-          BlairHacks_5 is a 36-hour hackathon hosted by <Link href="https://mbhs.edu" isExternal>MBHS</Link> students in Silver Spring, MD.
+          BlairHacks_6 is a 24-hour hackathon hosted by <Link href="https://mbhs.edu" isExternal>MBHS</Link> students in Silver Spring, MD.
           At BlairHacks, high school students in the DMV area are challenged to bring their innovative ideas to life in the form of websites, apps, and robots.
           Our hackathon is free and accessible to all high school students thanks to our wonderful sponsors.
         </Text>
 
         <Text mt={3} mb = {8}>
-          At our previous iteration in 2020, BlairHacks_4 brought together over 80 in-person attendees from 6+ high schools around the DMV.
+          At our previous iteration in 2022, BlairHacks_5 brought together over 105 virtual attendees from all around the world.
           We're excited for another year of BlairHacks and to continue to spread our love for coding throughout our community!
         </Text>
 
@@ -43,11 +43,11 @@ export default function About() {
           BlairHacks provides an unparalleled environment with resources that empower students to pursue their passions in the computer science field and collaborate with like-minded developers.
         </Text>*/}
 
-        <div
+        {/* <div
           className="video"
           style={{
             position: "relative",
-            paddingBottom: "56.25%" /* 16:9 */,
+            paddingBottom: "56.25%",
             height: 0
           }}
         >
@@ -63,7 +63,7 @@ export default function About() {
             src={`https://www.youtube.com/embed/R6IAC0obm8E`}
             frameBorder="0"
           />
-        </div>
+        </div> */}
 
         <Heading as="h2" size="lg" mt={8}
           fontWeight="semibold"
@@ -72,14 +72,15 @@ export default function About() {
         </Heading>
         <Text mt={2}>
           {/* * Due to COVID-19, we aren't able to host an overnight event this year, but don't worry — we will still offer an in-person experience.
-          We've decided to host BlairHacks_5 in two portions: a virtual portion and an in-person portion. */}
-          Due to COVID-19, we aren't able to host an in-person event this year. BlairHacks_5 will be hosted virtually via Discord and Zoom!
+          We've decided to host BlairHacks_5 in two portions: a virtual portion and an in-person portion. 
+          Due to COVID-19, we aren't able to host an in-person event this year. BlairHacks_5 will be hosted virtually via Discord and Zoom! */}
+          This year we will be hosting a in-person hackathon at Montgomery Blair High School from February 17-18, 2022.
         </Text>
         <Text mt={2}>
           {/* The virtual portion will take place on Day 1 and will consist of a few virtual activities starting in the afternoon.
           The in-person portion will be on Day 2 at our facility.
           All attendees are required to attend both portions. */}
-          We will still host plenty of fun and engaging virtual activities such as workshops, gaming nights, and much more.
+          We will host plenty of fun and engaging virtual activities such as workshops, gaming nights, and much more.
 
         </Text>
         <Text mt={2}>
