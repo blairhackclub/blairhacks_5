@@ -82,7 +82,7 @@ export default function Sponsors() {
 				Help us make this hackathon possible! Email us at <Link href="mailto:team@blairhacks.com">team@blairhacks.com</Link>.
 			</Text>
 
-      <Link href = "/assets/Blairhacks_6 Sponsorship Package.pdf" textColor = "white">
+      <Link href = "/assets/BlairHacks_6 Sponsorship Package.pdf" textColor = "white">
         <Button mt={6}
           colorScheme="green"
           variant="outline"
