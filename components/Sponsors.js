@@ -81,6 +81,20 @@ export default function Sponsors() {
       <Text mt={3}>
 				Help us make this hackathon possible! Email us at <Link href="mailto:team@blairhacks.com">team@blairhacks.com</Link>.
 			</Text>
+      
+      <Link href = "/donate" textColor = "white">
+        <Button mt={6}
+          bgGradient="linear(to-tl,purple.500,blue.500)"
+          _hover={{
+            bgGradient: "linear(to-tl,purple.500,blue.500)",
+          }}
+          _active={{
+            bgGradient: "linear(to-tl,purple.500,blue.500)",
+          }}
+          variant="solid"
+        >Donate Individually
+        </Button>
+      </Link><br/>
 
       <Link href = "/assets/BlairHacks_6 Sponsorship Package.pdf" textColor = "white">
         <Button mt={6}
